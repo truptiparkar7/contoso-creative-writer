@@ -28,6 +28,7 @@ def write(researchContext, research, productContext, products, assignment, feedb
         }
     return result
 
+@trace
 def process(writer):
     # parse string this chracter --- , article and feedback
     result = writer.split("---")
