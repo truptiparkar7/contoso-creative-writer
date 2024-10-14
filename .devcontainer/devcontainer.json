@@ -16,7 +16,8 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers/features/node:1": {
             "version": "20.11"
-        }
+        },
+	"ghcr.io/devcontainers/features/github-cli:1": {}
     },
     "customizations": {
         "vscode": {
@@ -30,7 +31,8 @@
                 "esbenp.prettier-vscode",
 				"GitHub.vscode-github-actions",
 				"ms-azuretools.azure-dev",
-				"ms-python.black-formatter"
+				"ms-python.black-formatter",
+                "ms-toolsai.prompty@0.1.2024090502"
             ]
         }
     },
