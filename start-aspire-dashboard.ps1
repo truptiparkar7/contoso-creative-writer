@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 # Start the Aspire Dashboard
-docker run --rm -it -p 18888:18888 -p 4317:18889 -d --name aspire-dashboard mcr.microsoft.com/dotnet/aspire-dashboard:8.1.0
+docker run --rm -it -p 18888:18888 -p 4173:18889 -d --name aspire-dashboard mcr.microsoft.com/dotnet/aspire-dashboard:8.1.0
 # Wait for the Aspire Dashboard to start
 Start-Sleep -Seconds 7
 # Get the last 15 lines of the Aspire Dashboard logs
