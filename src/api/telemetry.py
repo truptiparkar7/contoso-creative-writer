@@ -53,7 +53,8 @@ def setup_telemetry(app: FastAPI):
 
                 project_client.telemetry.enable(destination=otel_exporter_endpoint)                
                 json_tracer = PromptyTracer()
-                Tracer.add("PromptyTracer", json_tracer.tracer)            
+                Tracer.add("PromptyTracer", json_tracer.tracer)
+                Tracer.add("OpenTelemetry", trace_span)   
 
             elif application_insights_connection_string: # Enable cloud tracing with Azure Monitor
 
